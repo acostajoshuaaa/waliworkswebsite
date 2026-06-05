@@ -1,0 +1,56 @@
+<svg width="1500" height="950" viewBox="0 0 1500 950" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Waliworkz premium basic maintenance logo</title>
+  <desc id="desc">A silver motorcycle and wrench mark above Waliworkz text on a black background.</desc>
+  <rect width="1500" height="950" fill="#111111"/>
+  <defs>
+    <linearGradient id="metalText" x1="300" y1="510" x2="1180" y2="650" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4f4f4f"/>
+      <stop offset="0.12" stop-color="#f3f3f3"/>
+      <stop offset="0.26" stop-color="#6d6d6d"/>
+      <stop offset="0.48" stop-color="#f8f8f8"/>
+      <stop offset="0.68" stop-color="#878787"/>
+      <stop offset="0.86" stop-color="#e9e9e9"/>
+      <stop offset="1" stop-color="#5d5d5d"/>
+    </linearGradient>
+    <linearGradient id="metalLine" x1="350" y1="245" x2="1160" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f8f8f8"/>
+      <stop offset="0.22" stop-color="#777"/>
+      <stop offset="0.52" stop-color="#ffffff"/>
+      <stop offset="0.78" stop-color="#6a6a6a"/>
+      <stop offset="1" stop-color="#f4f4f4"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="textShadow" x="-8%" y="-20%" width="116%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="3" flood-color="#000000" flood-opacity="0.75"/>
+      <feDropShadow dx="0" dy="-2" stdDeviation="1" flood-color="#ffffff" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softGlow)" stroke="url(#metalLine)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M462 346 C514 286 596 288 651 336 C708 386 763 386 835 386 H972 C1016 386 1056 405 1091 432"/>
+    <path d="M606 360 C681 350 753 356 841 375"/>
+    <path d="M588 404 H1010 C1053 405 1088 421 1125 457"/>
+    <path d="M554 454 C692 460 861 464 1053 459"/>
+    <path d="M1007 337 C1047 323 1086 305 1121 287 C1160 282 1200 319 1227 378"/>
+    <path d="M1042 290 C1104 292 1161 335 1194 402"/>
+    <path d="M1049 475 C1088 430 1162 431 1204 485"/>
+    <path d="M1137 453 C1167 455 1195 471 1213 498"/>
+    <path d="M426 397 H514 L568 348 C537 327 498 319 462 329 C419 340 390 368 372 399 L426 397 Z"/>
+    <path d="M372 399 C392 437 427 464 468 467 C508 470 545 457 568 429 H514 L462 397"/>
+    <path d="M855 316 C922 335 967 337 1017 334"/>
+  </g>
+
+  <g filter="url(#textShadow)">
+    <text x="750" y="610" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-size="120" font-weight="900" letter-spacing="6" fill="url(#metalText)" stroke="#2a2a2a" stroke-width="2">WALIWORKZ</text>
+    <text x="750" y="690" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="400" letter-spacing="12" fill="#d9d9d9">Premium Basic Maintenance</text>
+  </g>
+
+  <path d="M360 672 H459" stroke="#d9d9d9" stroke-width="4"/>
+  <path d="M1041 672 H1140" stroke="#d9d9d9" stroke-width="4"/>
+</svg>
