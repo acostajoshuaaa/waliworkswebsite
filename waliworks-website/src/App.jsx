@@ -10,82 +10,82 @@ import Footer from './components/Footer.jsx';
 // Reusable page data keeps the repeated sections simple and easy to update later.
 const services = [
   {
-    icon: '01',
-    title: 'General Motorcycle Repair',
-    description: 'Diagnosis and repair for everyday engine, electrical, brake, and rideability problems.',
+    icon: 'WR',
+    title: 'Workshop Repair',
+    description: 'Diagnosis and repair for engine, electrical, brake, and rideability issues.',
   },
   {
-    icon: '02',
+    icon: 'PM',
     title: 'Preventive Maintenance',
-    description: 'Oil service, tune-ups, chain care, fluid checks, and inspections to keep bikes reliable.',
+    description: 'Oil service, tune-ups, chain care, fluid checks, and pre-ride inspections.',
   },
   {
-    icon: '03',
+    icon: 'RS',
     title: 'Restoration Work',
-    description: 'Careful revival of tired motorcycles, from body panels and finishes to key mechanical parts.',
+    description: 'Careful revival of tired motorcycles, from body panels to key mechanical parts.',
   },
   {
-    icon: '04',
+    icon: 'CU',
     title: 'Customization',
-    description: 'Practical style and comfort upgrades including seats, lights, bars, trims, and accessories.',
+    description: 'Practical style, comfort, light, bar, trim, seat, and accessory upgrades.',
   },
   {
-    icon: '05',
+    icon: 'DT',
     title: 'Detailing and Cleaning',
-    description: 'Deep cleaning, degreasing, polishing, and finishing for a sharper workshop-fresh look.',
+    description: 'Deep cleaning, degreasing, polishing, and finishing for a workshop-fresh look.',
   },
   {
-    icon: '06',
+    icon: 'PI',
     title: 'Parts Installation',
-    description: 'Clean installation of replacement parts, upgrades, accessories, and customer-supplied items.',
+    description: 'Clean installation of replacement parts, upgrades, accessories, and supplied items.',
   },
 ];
 
 const projects = [
   {
-    title: 'Engine Tune-Up',
-    description: 'Improved idle, throttle response, and starting reliability after a full basic tune-up.',
-    badge: 'Maintenance',
+    title: 'Intake and Inspection',
+    description: 'Bike details, rider concerns, and initial checks are logged before the first tool is lifted.',
+    badge: 'Step 01',
   },
   {
-    title: 'Brake System Service',
-    description: 'Brake pads, fluid check, lever feel adjustment, and road-safe stopping performance.',
-    badge: 'Repair',
+    title: 'Repair Plan',
+    description: 'The team identifies parts, labor, and the cleanest path from issue to road-ready.',
+    badge: 'Step 02',
   },
   {
-    title: 'Full Body Restoration',
-    description: 'Body panel repair, refreshed finish, and detail work for a cleaner complete build.',
-    badge: 'Restoration',
+    title: 'Workshop Execution',
+    description: 'Repairs, restoration, detailing, and upgrades move through focused bench work.',
+    badge: 'Step 03',
   },
   {
-    title: 'Custom Seat Installation',
-    description: 'Comfort-focused seat upgrade fitted neatly to match the motorcycle profile.',
-    badge: 'Custom',
+    title: 'Quality Check',
+    description: 'Fasteners, fluids, brakes, electricals, and fitment get a final practical inspection.',
+    badge: 'Step 04',
   },
   {
-    title: 'Deep Cleaning and Detailing',
-    description: 'Degreased engine area, polished panels, and detailed hard-to-reach workshop spots.',
-    badge: 'Detailing',
+    title: 'Rider Handover',
+    description: 'Customers leave with clear notes on what was fixed and what to monitor next.',
+    badge: 'Step 05',
   },
   {
-    title: 'Lighting Upgrade',
-    description: 'Visibility-focused lighting installation with tidy routing and secure mounting.',
-    badge: 'Installation',
+    title: 'Follow-Up Ready',
+    description: 'Maintenance reminders and next-service recommendations keep the ride dependable.',
+    badge: 'Step 06',
   },
 ];
 
 const transformations = [
   {
-    title: 'Daily Rider Refresh',
-    caption: 'A worn commuter bike received deep cleaning, basic repairs, and a sharper road-ready finish.',
+    title: 'Upload the concern',
+    caption: 'Send the model, photos, issue details, and preferred schedule.',
   },
   {
-    title: 'Body Panel Revival',
-    caption: 'Faded and scuffed panels were restored with cleaner alignment, finishing, and detail work.',
+    title: 'Route the job',
+    caption: 'Waliworks separates repair, maintenance, restoration, custom, and detailing tasks.',
   },
   {
-    title: 'Custom Comfort Upgrade',
-    caption: 'Seat and accessory upgrades improved comfort while keeping the motorcycle practical for daily use.',
+    title: 'Complete the ride',
+    caption: 'The bike moves through service, quality check, and practical handover notes.',
   },
 ];
 
@@ -99,29 +99,33 @@ const sellingPoints = [
 
 function AboutOwners() {
   return (
-    <section className="bg-neutral-950 py-16 sm:py-20" aria-labelledby="about-title">
-      <div className="mx-auto grid w-[min(1120px,calc(100%-2rem))] gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+    <section className="bg-[#eef6ff] py-16 sm:py-24" id="about" aria-labelledby="about-title">
+      <div className="mx-auto grid w-[calc(100%_-_2rem)] max-w-[1120px] gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
         <div>
-          <p className="text-sm font-black uppercase tracking-[0.18em] text-amber-300">About the owners</p>
-          <h2 id="about-title" className="mt-3 text-3xl font-black uppercase leading-tight text-white sm:text-5xl">
+          <p className="text-xs font-black uppercase tracking-[0.18em] text-blue-600">About the owners</p>
+          <h2 id="about-title" className="mt-3 text-3xl font-black leading-tight text-[#071f45] sm:text-5xl">
             Built by the hands behind Waliworks
           </h2>
+          <p className="mt-4 max-w-xl text-slate-600">
+            A focused two-owner workshop for riders who want clear advice, clean work, and practical
+            maintenance decisions.
+          </p>
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2">
-          <article className="rounded-lg border border-white/10 bg-white/[0.04] p-6 shadow-2xl shadow-black/20 transition hover:-translate-y-1 hover:border-orange-400/70">
-            <p className="text-xs font-black uppercase tracking-[0.2em] text-orange-300">Mechanic / Owner</p>
-            <h3 className="mt-3 text-2xl font-black text-white">Joshua Acosta</h3>
-            <p className="mt-3 text-zinc-300">
+          <article className="rounded-lg border border-blue-100 bg-white p-6 shadow-[0_18px_50px_rgba(20,54,105,0.09)] transition hover:-translate-y-1 hover:border-blue-300">
+            <p className="text-xs font-black uppercase tracking-[0.2em] text-blue-600">Mechanic / Owner</p>
+            <h3 className="mt-3 text-2xl font-black text-[#071f45]">Joshua Acosta</h3>
+            <p className="mt-3 text-slate-600">
               Focused on reliable service, practical motorcycle repairs, and clear inspection work
               riders can understand.
             </p>
           </article>
 
-          <article className="rounded-lg border border-white/10 bg-white/[0.04] p-6 shadow-2xl shadow-black/20 transition hover:-translate-y-1 hover:border-orange-400/70">
-            <p className="text-xs font-black uppercase tracking-[0.2em] text-orange-300">Mechanic / Owner</p>
-            <h3 className="mt-3 text-2xl font-black text-white">Lian Reyes</h3>
-            <p className="mt-3 text-zinc-300">
+          <article className="rounded-lg border border-amber-100 bg-white p-6 shadow-[0_18px_50px_rgba(20,54,105,0.09)] transition hover:-translate-y-1 hover:border-amber-300">
+            <p className="text-xs font-black uppercase tracking-[0.2em] text-amber-600">Mechanic / Owner</p>
+            <h3 className="mt-3 text-2xl font-black text-[#071f45]">Lian Reyes</h3>
+            <p className="mt-3 text-slate-600">
               Brings detailed workmanship to maintenance, restoration, cleaning, customization, and
               parts installation.
             </p>
