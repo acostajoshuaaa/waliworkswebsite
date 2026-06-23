@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "bun --hot src/index.ts",
-    "start": "NODE_ENV=production bun src/index.ts",
-    "build": "bun run build.ts"
+    "dev": "cd waliworks-website && bun dev",
+    "start": "cd waliworks-website && bun run preview -- --host localhost --port 3000 --strictPort",
+    "build": "cd waliworks-website && bun run build"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.7",

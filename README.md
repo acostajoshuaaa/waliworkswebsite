@@ -12,6 +12,12 @@ To start a development server:
 bun dev
 ```
 
+Open:
+
+```text
+http://localhost:3000/home
+```
+
 To run for production:
 
 ```bash

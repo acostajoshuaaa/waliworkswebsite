@@ -18,7 +18,11 @@ bun install
 bun dev
 ```
 
-Open the local URL printed by Vite.
+Open:
+
+```text
+http://localhost:3000/home
+```
 
 ## Build
 
